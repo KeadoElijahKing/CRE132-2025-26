@@ -46,6 +46,19 @@ if (playerScore >= 100)
     Console.WriteLine("You are a high-score champion!");
 }
 
+#!csharp
+
+public int PlayerHealth = 220;
+
+if (PlayerHealth >= 230)
+{
+Console.WriteLine("You.re health is full");
+}
+else
+{
+Console.WriteLine("you're running low");
+}
+
 #!markdown
 
 ## 3. Handling the "Otherwise" with `else`
@@ -76,6 +89,19 @@ else
     Console.WriteLine("Your health is low. Find a health pack!");
 }
 
+#!csharp
+
+public int PlayerMagicMeter = 110;
+
+if (PlayerMagicMeter > 105)
+{
+    Console.WriteLine("you're magic is fine");
+}
+else
+{
+Console.WriteLine("maybe replenish magic");
+}
+
 #!markdown
 
 ## 4. Chaining Conditions with `else if`
@@ -103,6 +129,31 @@ else
     Console.WriteLine("Weather condition unknown.");
 }
 
+#!csharp
+
+public string abilitySpendMeter = "75%";
+
+if (abilitySpendMeter == "full")
+{
+Console.WriteLine("abilities are good to go");
+}
+else if (abilitySpendMeter == "75%")
+{
+Console.WriteLine("abilities dropping slightly");
+}
+else if (abilitySpendMeter == "50%")
+{
+    Console.WriteLine("at half capacity");
+}
+else if (abilitySpendMeter == "25%")
+{
+    Console.WriteLine("into the last quarter");
+}
+else if (abilitySpendMeter == "0%")
+{
+    Console.WriteLine("fully depleted, need to replenish");
+}
+
 #!markdown
 
 ## 5. Code Challenge: Simple Password Checker
@@ -117,6 +168,19 @@ else
 #!csharp
 
 // Your password checker code goes here!
+
+#!csharp
+
+public string SecretPassword = "talacamula";
+
+if (SecretPassword == "talacamula")
+{
+    Console.WriteLine("you may enter");
+}
+else if (SecretPassword != "talacamula")
+{
+    Console.WriteLine("entry denied"); 
+}
 
 #!markdown
 
